@@ -16,15 +16,19 @@
     "hat": "0.0.3",
     "duplex-emitter": "0.1.6",
     "painterly-textures": "0.0.3",
-    "voxel": "0.3.1"
+    "voxel": "0.3.1",
+    "snyk": "^1.88.2"
   },
   "scripts": {
-    "start": "node demo.js"
+    "start": "node demo.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "0.8.x"
   },
   "devDependencies": {
     "websocket-stream": "0.0.5"
-  }
+  },
+  "snyk": true
 }
